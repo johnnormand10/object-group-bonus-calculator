@@ -67,6 +67,16 @@ console.log(employees);
   else{
     employees[i].bonus = 0;
   }
+
+if(Number(employees[i].employeeNumber) < 10000){
+employees[i].bonus +=5
+}
+if(Number(employees[i].annualSalary)>65000 && employees[i].bonus>=1){
+  employees[i].bonus -=1
+}
+if(employees[i].bonus>13){
+  employees[i].bonus = 13
+}
 }
 }
 
